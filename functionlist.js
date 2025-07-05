@@ -314,7 +314,7 @@ function checkvalue(formData, excludeFields = []) {
 }
 
 function removeinvalid() {
-    $("input, select, textarea").not("#checklist1").each(function () {
+    $("input, select, textarea").each(function () {
         if ($(this).is(":radio") || $(this).is(":checkbox")) {
             $(this).prop("checked", false);
         } else {
